@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Before After Slider</title>
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+</head>
+<body>
+
+<div id="slider"></div>
+
+<script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+<script>
+  new juxtapose.JXSlider('#slider',
+    [
+      {
+        src: 'before.jpg',
+        label: 'Before'
+      },
+      {
+        src: 'after.jpg',
+        label: 'After'
+      }
+    ],
+    {
+      animate: true,
+      showLabels: false,
+      showCredits: true,
+      startingPosition: "50%"
+    }
+  );
+</script>
+
+</body>
+</html>
